@@ -1,3 +1,7 @@
+job:
+  except:
+    - branches 
+
 stages:
   - canary
   - build
