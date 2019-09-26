@@ -9,7 +9,6 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      - name: Echo the greeting's time
-        run: echo 'The time was'
-      - name: ls
-        run: ls -R
+      - name: Checkout
+        uses: actions/checkout@master
+        run: ls
