@@ -1,12 +1,10 @@
-job:
-  except:
-    - branches 
-
 stages:
   - canary
   - build
 
 .build:
+  except:
+    - branches 
   retry:
     max: 2
   variables:
