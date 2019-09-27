@@ -5,8 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: votca/buildenv:latest
     steps:
-      - uses: docker://votca/buildenv:latest
       - uses: actions/checkout@master
         with:
           submodules: true
