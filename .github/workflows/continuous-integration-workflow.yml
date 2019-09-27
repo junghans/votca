@@ -5,7 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: votca/buildenv:latest
+    container:
+      image: votca/buildenv:latest
       options: --user votca
     steps:
       - uses: actions/checkout@master
