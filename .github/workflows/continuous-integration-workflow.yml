@@ -10,11 +10,9 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - run: whoami
-      - run: groups
-      - run: pwd
-      - run: ls -R
+      - run: id
       - run: ls -l
+      - run: sudo chown -R votca:votca .
       - run: mkdir build && cd build && cmake ..
       - run: make
       - name: ls
