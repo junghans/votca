@@ -7,14 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: votca/buildenv:latest
-      options: --user votca
+      options: --user 1001
     steps:
       - uses: actions/checkout@master
         with:
           submodules: true
       - run: id
       - run: ls -l
-      - run: sudo chown -R votca:votca .
       - run: mkdir build && cd build && cmake ..
       - run: make
       - name: ls
