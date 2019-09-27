@@ -9,4 +9,4 @@ rules.ninja
 build.ninja
 .ninja_*
 
-build*
+build*/

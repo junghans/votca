@@ -12,9 +12,4 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - run: id
-      - run: ls -l
-      - run: mkdir build && cd build && cmake ..
-      - run: make -C build
-      - name: ls
-        run: ls -R
+      - run: .github/workflows/build.sh
