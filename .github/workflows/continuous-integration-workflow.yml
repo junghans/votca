@@ -11,6 +11,7 @@ jobs:
         with:
           submodules: true
       - run: whoami
+      - run: groups
       - run: pwd
       - run: ls -R
       - run: ls -l
