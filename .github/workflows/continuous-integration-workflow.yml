@@ -13,6 +13,7 @@ jobs:
       - run: whoami
       - run: pwd
       - run: ls -R
+      - run: ls -l
       - run: mkdir build && cd build && cmake ..
       - run: make
       - name: ls
