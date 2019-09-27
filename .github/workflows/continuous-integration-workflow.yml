@@ -14,7 +14,8 @@ jobs:
           submodules: true
       - run: id
       - run: ls -l
-      - run: mkdir build && cd build && cmake ..
+      - run: mkdir build && cd build
+      - run: cmake ..
       - run: make
       - name: ls
         run: ls -R
