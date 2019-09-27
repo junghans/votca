@@ -9,6 +9,9 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - name: Docker 
+        uses: docker://votca/buildenv:latest
       - name: Checkout
         uses: actions/checkout@master
+      - name: ls
         run: ls
